@@ -37,9 +37,9 @@ export function Publications() {
   return (
     <section
       id="publications"
-      className="relative py-20 border-t border-black/[0.06]"
+      className="relative min-h-screen flex flex-col justify-center py-20 border-t border-black/[0.06]"
     >
-      <div className="mx-auto max-w-3xl px-6">
+      <div className="mx-auto max-w-3xl w-full px-6">
         <div className="flex items-end justify-between gap-6 flex-wrap mb-6">
           <SectionHeading>Publications</SectionHeading>
           <a

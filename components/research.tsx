@@ -40,8 +40,11 @@ const themes = [
 export function Research() {
   const [active, setActive] = useState<string | null>(null);
   return (
-    <section id="research" className="relative py-20">
-      <div className="mx-auto max-w-3xl px-6">
+    <section
+      id="research"
+      className="relative min-h-screen flex flex-col justify-center py-20"
+    >
+      <div className="mx-auto max-w-3xl w-full px-6">
         <SectionHeading>Research</SectionHeading>
         <p className="text-base text-ink-700 leading-relaxed max-w-xl">
           I work on <span className="text-ink-900">AI alignment and safety</span>,
@@ -61,7 +64,7 @@ export function Research() {
           ))}
         </div>
 
-        <ol className="mt-12 grid sm:grid-cols-2 gap-x-10 gap-y-6 stagger">
+        <ol className="mt-10 grid sm:grid-cols-2 gap-x-10 gap-y-6 stagger">
           {themes.map((t) => (
             <li
               key={t.n}

@@ -3,8 +3,11 @@ import { SectionHeading } from "./section-heading";
 
 export function About() {
   return (
-    <section id="about" className="relative py-20 border-t border-black/[0.06]">
-      <div className="mx-auto max-w-3xl px-6">
+    <section
+      id="about"
+      className="relative min-h-screen flex flex-col justify-center py-20 border-t border-black/[0.06]"
+    >
+      <div className="mx-auto max-w-3xl w-full px-6">
         <SectionHeading>About</SectionHeading>
         <div className="text-base text-ink-700 leading-relaxed space-y-4 max-w-2xl">
           <p>

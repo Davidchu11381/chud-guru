@@ -1,5 +1,6 @@
 import { Background } from "@/components/background";
 import { ScrollProgress } from "@/components/scroll-progress";
+import { SectionDots } from "@/components/section-dots";
 import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
 import { Research } from "@/components/research";
@@ -14,6 +15,7 @@ export default function Page() {
       <ScrollProgress />
       <Background />
       <Nav />
+      <SectionDots />
       <Hero />
       <Research />
       <News />

@@ -1,13 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowDown } from "lucide-react";
 import { profile } from "@/lib/data";
 
 export function Hero() {
   const [scrollY, setScrollY] = useState(0);
-  const portraitRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrollY(window.scrollY);
@@ -18,12 +17,19 @@ export function Hero() {
   const parallax = Math.min(scrollY * 0.12, 40);
 
   return (
-    <section id="top" className="relative pt-36 pb-20 sm:pt-44 sm:pb-24">
-      <div className="mx-auto max-w-3xl px-6">
+    <section
+      id="top"
+      className="relative min-h-screen flex flex-col justify-center pt-24 pb-20"
+    >
+      <div className="mx-auto max-w-3xl w-full px-6">
         <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-10 items-center fade-up">
           <div className="order-2 sm:order-1">
             <h1 className="font-serif text-5xl sm:text-6xl text-ink-900 leading-[1.05] tracking-tight font-normal">
-              Minh Duc <span className="italic font-medium">Chu</span>
+              Minh Duc{" "}
+              <span className="text-ink-400 italic">(</span>
+              <span className="italic font-medium">David</span>
+              <span className="text-ink-400 italic">)</span>{" "}
+              <span className="italic font-medium">Chu</span>
             </h1>
             <p className="mt-5 text-base text-ink-700 leading-relaxed max-w-md">
               PhD candidate at the{" "}
@@ -48,7 +54,6 @@ export function Hero() {
           </div>
 
           <div
-            ref={portraitRef}
             className="order-1 sm:order-2 justify-self-start sm:justify-self-end"
             style={{ transform: `translateY(${parallax}px)` }}
           >
@@ -62,7 +67,7 @@ export function Hero() {
               />
               <Image
                 src="/portrait.jpg"
-                alt="Minh Duc Chu"
+                alt="Minh Duc (David) Chu"
                 width={200}
                 height={200}
                 priority
@@ -75,16 +80,16 @@ export function Hero() {
 
         <a
           href="#research"
-          className="mt-20 inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-ink-500 hover:text-ink-900 transition-colors group"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 inline-flex flex-col items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-ink-500 hover:text-ink-900 transition-colors group"
         >
-          Scroll
-          <ArrowDown className="w-3 h-3 transition-transform group-hover:translate-y-0.5 animate-bounce-soft" />
+          <span>Scroll</span>
+          <ArrowDown className="w-3 h-3 animate-bounce-soft" />
         </a>
       </div>
       <style jsx>{`
         @keyframes bounce-soft {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(3px); }
+          0%, 100% { transform: translateY(0); opacity: 0.6; }
+          50% { transform: translateY(4px); opacity: 1; }
         }
         :global(.animate-bounce-soft) {
           animation: bounce-soft 2s ease-in-out infinite;

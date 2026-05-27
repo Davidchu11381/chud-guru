@@ -32,7 +32,7 @@ export function Nav() {
           href="#top"
           className="font-serif italic text-lg text-ink-900 hover:text-accent transition-colors"
         >
-          Minh Duc Chu
+          Minh Duc (David) Chu
         </a>
         <ul className="hidden sm:flex items-center gap-1 text-sm">
           {links.map((l) => (

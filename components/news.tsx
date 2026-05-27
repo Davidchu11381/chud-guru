@@ -4,8 +4,11 @@ import { SectionHeading } from "./section-heading";
 
 export function News() {
   return (
-    <section id="news" className="relative py-20 border-t border-black/[0.06]">
-      <div className="mx-auto max-w-3xl px-6">
+    <section
+      id="news"
+      className="relative min-h-screen flex flex-col justify-center py-20 border-t border-black/[0.06]"
+    >
+      <div className="mx-auto max-w-3xl w-full px-6">
         <SectionHeading>News</SectionHeading>
         <ul className="stagger divide-y divide-black/[0.06] border-y border-black/[0.06]">
           {news.map((n) => (

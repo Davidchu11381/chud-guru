@@ -13,9 +13,9 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-20 pb-28 border-t border-black/[0.06]"
+      className="relative min-h-screen flex flex-col justify-center py-20 pb-12 border-t border-black/[0.06]"
     >
-      <div className="mx-auto max-w-3xl px-6">
+      <div className="mx-auto max-w-3xl w-full px-6">
         <SectionHeading>Contact</SectionHeading>
         <p className="text-base text-ink-700 leading-relaxed max-w-2xl">
           Happy to hear from anyone working on AI alignment, model welfare, or
