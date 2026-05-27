@@ -7,9 +7,9 @@ export function About() {
       id="about"
       className="relative min-h-screen flex flex-col justify-center py-20 border-t border-black/[0.06]"
     >
-      <div className="mx-auto max-w-3xl w-full px-6">
+      <div className="mx-auto max-w-4xl w-full px-6">
         <SectionHeading>About</SectionHeading>
-        <div className="text-base text-ink-700 leading-relaxed space-y-4 max-w-2xl">
+        <div className="text-lg sm:text-xl text-ink-700 leading-relaxed space-y-5 max-w-3xl">
           <p>
             I&apos;m a Computer Science PhD candidate at the{" "}
             <span className="text-ink-900">

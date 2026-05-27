@@ -39,21 +39,21 @@ export function Publications() {
       id="publications"
       className="relative min-h-screen flex flex-col justify-center py-20 border-t border-black/[0.06]"
     >
-      <div className="mx-auto max-w-3xl w-full px-6">
-        <div className="flex items-end justify-between gap-6 flex-wrap mb-6">
+      <div className="mx-auto max-w-4xl w-full px-6">
+        <div className="flex items-end justify-between gap-6 flex-wrap mb-8">
           <SectionHeading>Publications</SectionHeading>
           <a
             href="https://scholar.google.com/citations?user=mVCqi_kAAAAJ&hl=en"
             target="_blank"
             rel="noreferrer"
-            className="text-sm text-ink-500 hover:text-accent transition-colors inline-flex items-center gap-1 mb-2"
+            className="text-base text-ink-500 hover:text-accent transition-colors inline-flex items-center gap-1 mb-3"
           >
             Google Scholar
-            <ExternalLink className="w-3 h-3" />
+            <ExternalLink className="w-4 h-4" />
           </a>
         </div>
 
-        <ol className="stagger space-y-7">
+        <ol className="stagger space-y-8">
           {visible.map((pub, idx) => (
             <li key={pub.title}>
               <PubEntry pub={pub} index={idx + 1} />
@@ -65,9 +65,9 @@ export function Publications() {
           <button
             type="button"
             onClick={() => setShowAll((s) => !s)}
-            className="group text-sm text-ink-600 hover:text-accent transition-colors inline-flex items-center gap-1.5"
+            className="group text-base text-ink-600 hover:text-accent transition-colors inline-flex items-center gap-2"
           >
-            <span className="font-mono text-xs">
+            <span className="font-mono text-sm">
               {showAll ? "←" : "→"}
             </span>
             {showAll
@@ -82,17 +82,17 @@ export function Publications() {
 
 function PubEntry({ pub, index }: { pub: Publication; index: number }) {
   return (
-    <article className="group grid grid-cols-[36px_1fr] gap-5 transition-transform duration-300 hover:translate-x-1">
+    <article className="group grid grid-cols-[44px_1fr] gap-6 transition-transform duration-300 hover:translate-x-1">
       <div className="pt-1">
-        <div className="font-mono text-[11px] text-ink-400 group-hover:text-ink-900 transition-colors">
+        <div className="font-mono text-xs text-ink-400 group-hover:text-ink-900 transition-colors">
           {String(index).padStart(2, "0")}
         </div>
-        <div className="font-mono text-[10px] text-ink-400 mt-1">
+        <div className="font-mono text-xs text-ink-400 mt-1.5">
           {pub.year}
         </div>
       </div>
       <div>
-        <h3 className="text-[15px] font-medium text-ink-900 leading-snug tracking-tight">
+        <h3 className="text-lg font-medium text-ink-900 leading-snug tracking-tight">
           {pub.pdf ? (
             <a
               href={pub.pdf}
@@ -101,13 +101,13 @@ function PubEntry({ pub, index }: { pub: Publication; index: number }) {
               className="hover:text-accent transition-colors inline-flex items-baseline gap-1.5"
             >
               <span>{pub.title}</span>
-              <ExternalLink className="w-3 h-3 shrink-0 opacity-40 group-hover:opacity-100 translate-y-0.5 transition-opacity" />
+              <ExternalLink className="w-3.5 h-3.5 shrink-0 opacity-40 group-hover:opacity-100 translate-y-0.5 transition-opacity" />
             </a>
           ) : (
             pub.title
           )}
         </h3>
-        <p className="mt-1.5 text-sm text-ink-600 leading-relaxed">
+        <p className="mt-2 text-base text-ink-600 leading-relaxed">
           {highlightAuthor(pub.authors).map((chunk, i) =>
             typeof chunk === "string" ? (
               <span key={i}>{chunk}</span>
@@ -118,7 +118,7 @@ function PubEntry({ pub, index }: { pub: Publication; index: number }) {
             )
           )}
         </p>
-        <p className="mt-1 text-xs text-ink-500 italic font-serif">
+        <p className="mt-1 text-sm text-ink-500 italic font-serif">
           {pub.venue}
         </p>
       </div>

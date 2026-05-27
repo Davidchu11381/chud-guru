@@ -17,6 +17,18 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+main > section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@media (max-width: 640px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
 }
 
 body {

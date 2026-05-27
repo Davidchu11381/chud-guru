@@ -44,27 +44,27 @@ export function Research() {
       id="research"
       className="relative min-h-screen flex flex-col justify-center py-20"
     >
-      <div className="mx-auto max-w-3xl w-full px-6">
+      <div className="mx-auto max-w-4xl w-full px-6">
         <SectionHeading>Research</SectionHeading>
-        <p className="text-base text-ink-700 leading-relaxed max-w-xl">
+        <p className="text-lg sm:text-xl text-ink-700 leading-relaxed max-w-2xl">
           I work on <span className="text-ink-900">AI alignment and safety</span>,
           with a current focus on the shift from AI-as-
           <em className="font-serif">assistant</em> to AI-as-
           <em className="font-serif">companion</em>.
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-1.5">
+        <div className="mt-7 flex flex-wrap gap-2">
           {profile.interests.map((interest) => (
             <span
               key={interest}
-              className="font-mono text-[11px] uppercase tracking-wider text-ink-600 border border-black/10 rounded-full px-2.5 py-1 hover:border-ink-900 hover:text-ink-900 transition-colors cursor-default"
+              className="font-mono text-xs uppercase tracking-wider text-ink-600 border border-black/10 rounded-full px-3 py-1.5 hover:border-ink-900 hover:text-ink-900 transition-colors cursor-default"
             >
               {interest}
             </span>
           ))}
         </div>
 
-        <ol className="mt-10 grid sm:grid-cols-2 gap-x-10 gap-y-6 stagger">
+        <ol className="mt-12 grid sm:grid-cols-2 gap-x-12 gap-y-8 stagger">
           {themes.map((t) => (
             <li
               key={t.n}
@@ -72,23 +72,23 @@ export function Research() {
               onMouseLeave={() => setActive(null)}
               className="group cursor-default"
             >
-              <div className="flex items-baseline gap-3">
+              <div className="flex items-baseline gap-4">
                 <span
-                  className={`font-mono text-xs transition-colors ${
+                  className={`font-mono text-sm transition-colors ${
                     active === t.n ? "text-accent" : "text-ink-400"
                   }`}
                 >
                   {t.n}
                 </span>
-                <h3 className="font-serif text-lg text-ink-900 tracking-tight">
+                <h3 className="font-serif text-2xl text-ink-900 tracking-tight">
                   {t.title}
                 </h3>
               </div>
-              <p className="mt-1.5 ml-7 text-sm text-ink-600 leading-relaxed">
+              <p className="mt-2 ml-9 text-base text-ink-600 leading-relaxed">
                 {t.desc}
               </p>
               <div
-                className="ml-7 mt-2 h-px bg-ink-900 transition-all duration-500 origin-left"
+                className="ml-9 mt-2.5 h-px bg-ink-900 transition-all duration-500 origin-left"
                 style={{ transform: `scaleX(${active === t.n ? 1 : 0})` }}
               />
             </li>
