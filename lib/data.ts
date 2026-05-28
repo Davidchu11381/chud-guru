@@ -116,19 +116,21 @@ export const publications: Publication[] = [
     title:
       "Leveraging machine learning to identify gendered stereotypes and body image concerns on diet and fitness online forums",
     authors:
-      "Minh Duc Chu, Christina Sánchez, Zihao He, Rebecca Dorn, Stuart B. Murray, Kristina Lerman",
+      "Minh Duc Chu, Cinthia Sánchez, Zihao He, Rebecca Dorn, Stuart B. Murray, Kristina Lerman",
     venue: "Body Image",
     year: 2026,
     tag: "Journal",
+    pdf: "https://arxiv.org/abs/2407.03551",
   },
   {
     title:
       "Detecting Eating Disorders From Social Media Content: What Has Been Done and Where Do We Go Next?",
     authors:
-      "Laura D'Adamo, Jamil R. Moussaoui, Minh Duc Chu, Hannah Graver, C. Barr Taylor, Denise E. Wilfley, et al.",
+      "Laura D'Adamo, Jannah R. Moussaoui, David Chu, Haley Graver, C. Barr Taylor, Denise E. Wilfley, et al.",
     venue: "International Journal of Eating Disorders",
     year: 2026,
     tag: "Journal",
+    pdf: "https://onlinelibrary.wiley.com/doi/10.1002/eat.24565",
   },
   {
     title:
@@ -138,6 +140,7 @@ export const publications: Publication[] = [
     venue: "ICWSM 2026",
     year: 2026,
     tag: "ICWSM '26",
+    pdf: "https://arxiv.org/abs/2603.22504",
     featured: true,
   },
   {
@@ -169,6 +172,7 @@ export const publications: Publication[] = [
     venue: "EPJ Data Science",
     year: 2025,
     tag: "Journal",
+    pdf: "https://link.springer.com/article/10.1140/epjds/s13688-025-00575-5",
   },
   {
     title: "EDTok: A Dataset for Eating Disorder Content on TikTok",
@@ -177,6 +181,7 @@ export const publications: Publication[] = [
     venue: "ICWSM Workshop on Data for the Wellbeing of Most Vulnerable",
     year: 2025,
     tag: "ICWSM Workshop",
+    pdf: "https://workshop-proceedings.icwsm.org/pdf/2025_02.pdf",
   },
   {
     title:
@@ -196,23 +201,26 @@ export const publications: Publication[] = [
     venue: "arXiv preprint",
     year: 2024,
     tag: "Preprint",
+    pdf: "https://arxiv.org/abs/2401.09647",
   },
   {
     title:
       "Machine Learning Insights Into Eating Disorder Twitter Communities",
     authors:
-      "Hsien-Te Kao, Ingmar Erickson, Minh Duc H. Chu, Zihao He, Kristina Lerman, Svitlana Volkova",
+      "Hsien-Te Kao, Isabel Erickson, Minh Duc H. Chu, Zihao He, Kristina Lerman, Svitlana Volkova",
     venue: "CHI Extended Abstracts 2024",
     year: 2024,
     tag: "CHI '24",
+    pdf: "https://dl.acm.org/doi/10.1145/3613905.3651116",
   },
   {
     title:
       "Towards Safer Online Spaces: Simulating and Assessing Intervention Strategies for Eating Disorder Discussions",
     authors:
-      "Louis Penafiel, Hsien-Te Kao, Ingmar Erickson, David Chu, Ryan McCormack, Kristina Lerman, et al.",
+      "Louis Penafiel, Hsien-Te Kao, Isabel Erickson, David Chu, Ryan McCormack, Kristina Lerman, et al.",
     venue: "arXiv preprint",
     year: 2024,
     tag: "Preprint",
+    pdf: "https://arxiv.org/abs/2409.04043",
   },
 ];
