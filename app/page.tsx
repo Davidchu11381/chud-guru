@@ -24,8 +24,8 @@ export default function Page() {
       <Skills />
       <News />
       <Publications />
-      <Contact />
       <Services />
+      <Contact />
     </main>
   );
 }

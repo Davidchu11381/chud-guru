@@ -45,6 +45,15 @@ export function About() {
             as a Research Engineer Intern on the AI Safety &amp; Alignment team.
           </p>
           <p>
+            I started at USC in 2023 and expect to defend in late 2027. Before
+            that, I earned my B.A. with Distinction in{" "}
+            <span className="text-ink-900">
+              Computer Science &amp; Statistics
+            </span>{" "}
+            from <span className="text-ink-900">Carleton College</span> in
+            Minnesota.
+          </p>
+          <p>
             My research sits where{" "}
             <span className="text-ink-900">AI safety and alignment</span> meet{" "}
             <span className="text-ink-900">mental health</span>: how repeated
@@ -64,11 +73,9 @@ export function About() {
             to feel like someone.
           </p>
           <p>
-            I grew up in <span className="text-ink-900">Vũng Tàu</span>{" "}
-            <span aria-label="Vietnam flag">🇻🇳</span> on the coast of southern
-            Việt Nam, and now live in Los Angeles{" "}
-            <span aria-label="US flag">🇺🇸</span>. Outside research I box and
-            play tennis.
+            I grew up in <span className="text-ink-900">Vũng Tàu</span> on the
+            coast of southern Việt Nam, and now live in Los Angeles. Outside
+            research I box and play tennis.
           </p>
         </div>
       </div>

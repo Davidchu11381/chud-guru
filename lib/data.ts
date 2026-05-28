@@ -317,35 +317,47 @@ export const llmSkills: SkillGroup[] = [
   },
 ];
 
-export type TeachingItem = { code: string; title: string; term: string };
+export type LinkedVenue = { name: string; href: string };
+export type Role = { label: string; href: string };
+export type TeachingItem = {
+  code: string;
+  title: string;
+  term: string;
+  href: string;
+};
 
 export const services = {
   reviewing: [
-    "NAACL",
-    "ACL",
-    "EMNLP",
-    "AACL",
-    "EACL",
-    "CSCW",
-    "WWW",
-    "ICWSM",
-  ],
-  roles: ["ICWSM '26 — Local Chair"],
+    { name: "NAACL", href: "https://naacl.org/" },
+    { name: "ACL", href: "https://www.aclweb.org/" },
+    { name: "EMNLP", href: "https://aclanthology.org/venues/emnlp/" },
+    { name: "AACL", href: "https://aclanthology.org/venues/aacl/" },
+    { name: "EACL", href: "https://aclanthology.org/venues/eacl/" },
+    { name: "CSCW", href: "https://cscw.acm.org/" },
+    { name: "WWW", href: "https://thewebconf.org/" },
+    { name: "ICWSM", href: "https://www.icwsm.org/" },
+  ] as LinkedVenue[],
+  roles: [
+    { label: "ICWSM '26 — Local Chair", href: "https://www.icwsm.org/2026/" },
+  ] as Role[],
   teaching: [
     {
       code: "DSCI-352",
       title: "Applied Machine Learning and Data Mining",
       term: "Fall 2025",
+      href: "https://classes.usc.edu/term-20253/course/dsci-352/",
     },
     {
       code: "DSCI-550",
       title: "Data Science at Scale",
       term: "Spring 2026",
+      href: "https://classes.usc.edu/term-20261/course/dsci-550/",
     },
     {
       code: "DSCI-549",
       title: "Introduction to Computational Thinking and Data Science",
       term: "Spring 2025",
+      href: "https://classes.usc.edu/term-20251/course/dsci-549/",
     },
   ] as TeachingItem[],
 };

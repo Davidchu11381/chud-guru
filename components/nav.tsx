@@ -9,8 +9,8 @@ const links = [
   { href: "#skills", label: "Skills" },
   { href: "#news", label: "News" },
   { href: "#publications", label: "Publications" },
-  { href: "#contact", label: "Contact" },
   { href: "#services", label: "Services" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Nav() {

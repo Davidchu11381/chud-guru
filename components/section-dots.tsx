@@ -9,8 +9,8 @@ const sections = [
   { id: "skills", label: "Skills" },
   { id: "news", label: "News" },
   { id: "publications", label: "Publications" },
-  { id: "contact", label: "Contact" },
   { id: "services", label: "Services" },
+  { id: "contact", label: "Contact" },
 ];
 
 export function SectionDots() {

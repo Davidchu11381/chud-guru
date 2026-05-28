@@ -59,6 +59,11 @@ export function Contact() {
             ))}
           </div>
         </div>
+
+        <footer className="mt-24 pt-6 border-t border-black/[0.06] flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-ink-400">
+          <span>© {new Date().getFullYear()} Minh Duc (David) Chu</span>
+          <span>Built with Next.js · Hosted on Vercel</span>
+        </footer>
       </div>
     </section>
   );
