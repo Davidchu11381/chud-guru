@@ -39,12 +39,12 @@ export function Nav() {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden sm:flex items-center gap-1 text-sm">
+        <ul className="hidden sm:flex items-center gap-1 text-base">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="px-3 py-1.5 rounded text-ink-600 hover:text-ink-900 transition-colors"
+                className="px-3 py-2 rounded text-ink-600 hover:text-ink-900 transition-colors"
               >
                 {l.label}
               </a>

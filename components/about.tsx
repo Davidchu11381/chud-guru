@@ -57,9 +57,8 @@ export function About() {
             I grew up in <span className="text-ink-900">Vũng Tàu</span>{" "}
             <span aria-label="Vietnam flag">🇻🇳</span> on the coast of southern
             Việt Nam, and now live in Los Angeles{" "}
-            <span aria-label="US flag">🇺🇸</span>. Outside research I box, play
-            tennis, and read more philosophy of mind than is healthy for an
-            empiricist.
+            <span aria-label="US flag">🇺🇸</span>. Outside research I box and
+            play tennis.
           </p>
         </div>
       </div>
