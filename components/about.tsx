@@ -30,8 +30,8 @@ export function About() {
             >
               SIGNALS Lab
             </a>
-            ) and <span className="text-ink-900">Kristina Lerman</span>. This
-            summer I&apos;m an incoming{" "}
+            ) and <span className="text-ink-900">Kristina Lerman</span>. I&apos;m
+            currently an{" "}
             <span className="text-ink-900">Anthropic AI Safety Fellow</span>.
           </p>
           <p>
