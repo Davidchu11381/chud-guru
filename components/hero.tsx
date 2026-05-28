@@ -9,16 +9,16 @@ export function Hero() {
       className="relative min-h-screen flex flex-col justify-center pt-24 pb-20"
     >
       <div className="mx-auto max-w-4xl w-full px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-12 items-center fade-up">
+        <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-8 sm:gap-12 items-center fade-up">
           <div className="order-2 sm:order-1">
-            <h1 className="font-serif text-6xl sm:text-7xl md:text-[5.5rem] text-ink-900 leading-[1.02] tracking-tight font-normal">
+            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-ink-900 leading-[1.02] tracking-tight font-normal break-words">
               Minh Duc{" "}
               <span className="text-ink-400 italic">(</span>
               <span className="italic font-medium">David</span>
               <span className="text-ink-400 italic">)</span>{" "}
               <span className="italic font-medium">Chu</span>
             </h1>
-            <p className="mt-7 text-xl text-ink-700 leading-relaxed max-w-xl">
+            <p className="mt-6 sm:mt-7 text-lg sm:text-xl text-ink-700 leading-relaxed max-w-xl">
               PhD candidate at the{" "}
               <a
                 href={profile.links.isi}

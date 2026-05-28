@@ -27,19 +27,26 @@ export function Nav() {
           : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto max-w-3xl px-6 h-14 flex items-center justify-between">
+      <nav className="mx-auto max-w-3xl px-4 sm:px-6 h-14 flex items-center justify-between gap-2 sm:gap-4">
         <a
           href="#top"
-          className="font-serif italic text-lg text-ink-900 hover:text-accent transition-colors"
+          className="hidden sm:inline font-serif italic text-lg text-ink-900 hover:text-accent transition-colors whitespace-nowrap"
         >
           Minh Duc (David) Chu
         </a>
-        <ul className="hidden sm:flex items-center gap-1 text-sm">
+        <a
+          href="#top"
+          className="sm:hidden font-serif italic text-base text-ink-900 hover:text-accent transition-colors whitespace-nowrap"
+          aria-label="Minh Duc (David) Chu — top"
+        >
+          MDC
+        </a>
+        <ul className="flex items-center gap-0 sm:gap-1 text-[11px] sm:text-sm">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="px-3 py-1.5 rounded text-ink-600 hover:text-ink-900 transition-colors"
+                className="px-1.5 sm:px-3 py-1.5 rounded text-ink-600 hover:text-ink-900 transition-colors"
               >
                 {l.label}
               </a>

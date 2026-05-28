@@ -78,17 +78,17 @@ export function News() {
                       opacity: isHovered ? 1 : 0,
                     }}
                   />
-                  <div className="grid grid-cols-[110px_1fr_auto] gap-6 items-center pl-4 sm:pl-6">
+                  <div className="grid grid-cols-[1fr_auto] gap-x-3 gap-y-1 sm:grid-cols-[110px_1fr_auto] sm:gap-6 items-start sm:items-center pl-3 sm:pl-6">
                     <time
                       dateTime={n.iso}
-                      className={`font-mono text-sm uppercase tracking-wider transition-colors duration-300 ${
+                      className={`col-span-2 sm:col-span-1 font-mono text-xs sm:text-sm uppercase tracking-wider transition-colors duration-300 ${
                         isHovered ? "text-accent" : "text-ink-500"
                       }`}
                     >
                       {n.date}
                     </time>
                     <div
-                      className={`text-base sm:text-lg leading-relaxed transition-colors duration-300 ${
+                      className={`text-sm sm:text-lg leading-relaxed transition-colors duration-300 ${
                         isHovered ? "text-ink-900" : "text-ink-700"
                       }`}
                     >
