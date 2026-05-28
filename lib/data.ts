@@ -7,7 +7,7 @@ export const profile = {
   advisor: "Luca Luceri",
   coAdvisor: "Kristina Lerman",
   fellowship:
-    "Anthropic AI Safety Fellow (Summer 2026), focusing on socio-technical alignment.",
+    "Incoming Anthropic AI Safety Fellow (Summer 2026) and incoming Research Scientist Intern on Character.AI's Safety & Alignment team.",
   origin: "Vũng Tàu, Việt Nam",
   location: "Los Angeles, CA",
   email: "mhchu@usc.edu",
@@ -33,6 +33,9 @@ export const profile = {
     github: "https://github.com/davidchu11381",
     acl: "https://aclanthology.org/people/minh-duc-chu/",
     email: "mailto:mhchu@usc.edu",
+    isi: "https://www.isi.edu/",
+    signalsLab: "https://signals-lab.vercel.app/",
+    advisor: "https://www.luceriluc.it/",
   },
 };
 

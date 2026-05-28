@@ -20,17 +20,33 @@ export function Hero() {
             </h1>
             <p className="mt-7 text-xl text-ink-700 leading-relaxed max-w-xl">
               PhD candidate at the{" "}
-              <span className="text-ink-900">USC Information Sciences Institute</span>
+              <a
+                href={profile.links.isi}
+                target="_blank"
+                rel="noreferrer"
+                className="link-quiet text-ink-900"
+              >
+                USC Information Sciences Institute
+              </a>
               , advised by{" "}
               <a
-                href="https://www.luceriluc.it/"
+                href={profile.links.advisor}
+                target="_blank"
+                rel="noreferrer"
+                className="link-quiet text-ink-900"
+              >
+                Luca Luceri
+              </a>{" "}
+              (
+              <a
+                href={profile.links.signalsLab}
                 target="_blank"
                 rel="noreferrer"
                 className="link-quiet"
               >
-                Luca Luceri
-              </a>{" "}
-              and <span className="text-ink-900">Kristina Lerman</span>.
+                SIGNALS Lab
+              </a>
+              ) and <span className="text-ink-900">Kristina Lerman</span>.
             </p>
             <p className="mt-4 text-base text-ink-500 leading-relaxed max-w-xl">
               {profile.fellowship}
