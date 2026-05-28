@@ -26,6 +26,7 @@ export const profile = {
     "Human–AI Companionship",
     "Model Psychology",
     "Model Welfare",
+    "Interpretability",
     "Character Training",
     "Social NLP",
   ],

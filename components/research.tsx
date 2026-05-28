@@ -12,8 +12,8 @@ const themes = [
   },
   {
     n: "02",
-    title: "Model Psychology & Welfare",
-    desc: "Stable traits, drives, failure modes — and what we may owe entities trained to feel like someone.",
+    title: "Psychology, Welfare & Interpretability",
+    desc: "The traits, drives, and failure modes models develop, how complex constructs get encoded as (often linear) directions inside them, and how the way we treat models may carry downstream weight.",
   },
   {
     n: "03",

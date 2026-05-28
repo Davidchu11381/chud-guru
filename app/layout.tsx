@@ -15,7 +15,7 @@ const serif = Lora({
 export const metadata: Metadata = {
   title: "Minh Duc Chu — USC ISI",
   description:
-    "Minh Duc Chu — PhD candidate at the USC Information Sciences Institute. AI alignment and safety, model psychology, model welfare, and the shift from AI-as-assistant to AI-as-companion.",
+    "Minh Duc Chu — PhD candidate at the USC Information Sciences Institute. AI alignment and safety, model psychology, model welfare, interpretability, and the shift from AI-as-assistant to AI-as-companion.",
   metadataBase: new URL("https://minhducchu.com"),
   robots: {
     index: true,
