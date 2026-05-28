@@ -52,8 +52,8 @@ export function About() {
             I&apos;m also very interested in{" "}
             <span className="text-ink-900">model psychology</span> and{" "}
             <span className="text-ink-900">model welfare</span>, and what they
-            complicate about AI safety and alignment — what stable traits,
-            drives, and failure modes models develop, and what we may owe
+            complicate about AI safety and alignment — what psychosocial
+            traits, drives, and failure modes models develop, and what we may owe
             entities trained to feel like someone.
           </p>
           <p>
