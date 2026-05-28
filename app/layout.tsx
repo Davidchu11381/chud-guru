@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   description:
     "Minh Duc Chu — PhD candidate at the USC Information Sciences Institute. AI alignment and safety, model psychology, model welfare, and the shift from AI-as-assistant to AI-as-companion.",
   metadataBase: new URL("https://minhducchu.com"),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   openGraph: {
     title: "Minh Duc Chu — USC ISI",
     description:

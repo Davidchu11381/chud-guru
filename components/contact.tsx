@@ -1,5 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import { profile } from "@/lib/data";
+import { Email } from "./email";
 import { SectionHeading } from "./section-heading";
 
 const socials = [
@@ -29,13 +30,8 @@ export function Contact() {
               Email
             </div>
             {profile.emails.map((e) => (
-              <div key={e.value} className="text-base">
-                <a
-                  href={`mailto:${e.value}`}
-                  className="link-quiet text-ink-700"
-                >
-                  {e.value}
-                </a>
+              <div key={e.label} className="text-base">
+                <Email user={e.user} domain={e.domain} />
                 <span className="ml-2 text-sm text-ink-400">({e.label})</span>
               </div>
             ))}

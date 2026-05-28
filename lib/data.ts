@@ -11,11 +11,12 @@ export const profile = {
     "Incoming Research Engineer Intern — AI Safety & Alignment, Character.AI (Fall 2026).",
   origin: "Vũng Tàu, Việt Nam",
   location: "Los Angeles, CA",
-  email: "mhchu@usc.edu",
+  // Stored split (no contiguous "@") so harvesters can't scrape the address;
+  // reassembled client-side in <Email />.
   emails: [
-    { label: "USC", value: "mhchu@usc.edu" },
-    { label: "ISI", value: "dchu@isi.edu" },
-    { label: "Personal", value: "davidchu11381@gmail.com" },
+    { label: "USC", user: "mhchu", domain: "usc.edu" },
+    { label: "ISI", user: "dchu", domain: "isi.edu" },
+    { label: "Personal", user: "davidchu11381", domain: "gmail.com" },
   ],
   tagline:
     "Studying how language models meet, and reshape, the people who use them.",
@@ -33,7 +34,6 @@ export const profile = {
     linkedin: "https://www.linkedin.com/in/chuhoangminhduc",
     github: "https://github.com/davidchu11381",
     acl: "https://aclanthology.org/people/minh-duc-chu/",
-    email: "mailto:mhchu@usc.edu",
     isi: "https://www.isi.edu/",
     signalsLab: "https://signals-lab.vercel.app/",
     advisor: "https://www.luceriluc.it/",
