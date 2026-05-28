@@ -32,7 +32,17 @@ export function About() {
             </a>
             ) and <span className="text-ink-900">Kristina Lerman</span>. I&apos;m
             currently an{" "}
-            <span className="text-ink-900">Anthropic AI Safety Fellow</span>.
+            <span className="text-ink-900">Anthropic AI Safety Fellow</span>, and
+            this fall I&apos;ll join{" "}
+            <a
+              href={profile.links.characterai}
+              target="_blank"
+              rel="noreferrer"
+              className="link-quiet text-ink-900"
+            >
+              Character.AI
+            </a>{" "}
+            as a Research Engineer Intern on the AI Safety &amp; Alignment team.
           </p>
           <p>
             My research sits where{" "}

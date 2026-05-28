@@ -43,6 +43,9 @@ export function Hero() {
             <p className="mt-4 text-base text-ink-500 leading-relaxed max-w-xl">
               {profile.fellowship}
             </p>
+            <p className="mt-1.5 text-base text-ink-500 leading-relaxed max-w-xl">
+              {profile.internship}
+            </p>
             <p className="mt-3 text-base text-ink-500 leading-relaxed max-w-xl">
               From {profile.origin} <span aria-label="Vietnam flag">🇻🇳</span>.
               Based in {profile.location}{" "}

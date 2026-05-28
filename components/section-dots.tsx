@@ -6,9 +6,11 @@ const sections = [
   { id: "top", label: "Top" },
   { id: "about", label: "About" },
   { id: "research", label: "Research" },
+  { id: "skills", label: "Skills" },
   { id: "news", label: "News" },
   { id: "publications", label: "Publications" },
   { id: "contact", label: "Contact" },
+  { id: "services", label: "Services" },
 ];
 
 export function SectionDots() {

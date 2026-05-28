@@ -7,6 +7,8 @@ export const profile = {
   advisor: "Luca Luceri",
   coAdvisor: "Kristina Lerman",
   fellowship: "Anthropic AI Safety Fellow (Summer 2026).",
+  internship:
+    "Incoming Research Engineer Intern — AI Safety & Alignment, Character.AI (Fall 2026).",
   origin: "Vũng Tàu, Việt Nam",
   location: "Los Angeles, CA",
   email: "mhchu@usc.edu",
@@ -35,6 +37,7 @@ export const profile = {
     isi: "https://www.isi.edu/",
     signalsLab: "https://signals-lab.vercel.app/",
     advisor: "https://www.luceriluc.it/",
+    characterai: "https://character.ai",
   },
 };
 
@@ -46,6 +49,12 @@ export type NewsItem = {
 };
 
 export const news: NewsItem[] = [
+  {
+    date: "May 2026",
+    iso: "2026-05-20",
+    body: "Joining Character.AI this fall as an incoming Research Engineer Intern on the AI Safety & Alignment team, mentored by Deniz Demir and Dylan Hadfield-Menell.",
+    href: "https://character.ai",
+  },
   {
     date: "May 2026",
     iso: "2026-05-27",
@@ -68,7 +77,7 @@ export const news: NewsItem[] = [
     date: "Jan 2026",
     iso: "2026-01",
     body: "Article on gendered stereotypes and body-image concerns on diet and fitness forums published in Body Image.",
-    href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mVCqi_kAAAAJ&citation_for_view=mVCqi_kAAAAJ:Tyk-4Ss8FVUC",
+    href: "https://arxiv.org/abs/2407.03551",
   },
   {
     date: "May 2025",
@@ -224,3 +233,118 @@ export const publications: Publication[] = [
     pdf: "https://arxiv.org/abs/2409.04043",
   },
 ];
+
+export type SkillGroup = { label: string; items: string[] };
+
+// General-purpose toolkit shown as a labelled row of tags.
+export const skills: SkillGroup[] = [
+  {
+    label: "Programming",
+    items: ["Python", "C++", "C", "Java", "JavaScript", "CUDA", "Docker"],
+  },
+  {
+    label: "Machine Learning",
+    items: [
+      "PyTorch",
+      "Hugging Face",
+      "TensorFlow",
+      "Keras",
+      "scikit-learn",
+      "OpenCV",
+      "R",
+    ],
+  },
+  {
+    label: "Statistics",
+    items: [
+      "Bayesian Inference",
+      "Probability",
+      "Time Series",
+      "Spatial Statistics",
+      "Sampling",
+      "Visualization",
+    ],
+  },
+];
+
+// LLM work, split into the four phases I actually touch.
+export const llmSkills: SkillGroup[] = [
+  {
+    label: "Training",
+    items: [
+      "SFT",
+      "RLHF",
+      "RLAIF",
+      "Preference Optimization (DPO, GRPO)",
+      "Constitutional AI",
+      "Character Training",
+      "Distributed Training (FSDP, DeepSpeed)",
+      "Multimodal / VLMs",
+    ],
+  },
+  {
+    label: "Interpretability",
+    items: [
+      "Sparse Autoencoders",
+      "Activation Steering",
+      "Linear Probing",
+      "Logit Lens",
+      "Circuit & Attention Analysis",
+      "Feature Attribution",
+    ],
+  },
+  {
+    label: "Evaluation & Oversight",
+    items: [
+      "LLM-as-a-Judge",
+      "Red-teaming",
+      "Behavioral & Psychometric Evals",
+      "Scalable Oversight (Debate, Weak-to-Strong)",
+      "Inspect AI",
+      "Petri",
+    ],
+  },
+  {
+    label: "Simulation",
+    items: [
+      "Multi-Agent Systems",
+      "Persona & Community Simulation",
+      "Agent-based Info-Ops",
+      "AutoGen",
+      "RAG",
+    ],
+  },
+];
+
+export type TeachingItem = { code: string; title: string; term: string };
+
+export const services = {
+  reviewing: [
+    "NAACL",
+    "ACL",
+    "EMNLP",
+    "AACL",
+    "EACL",
+    "CSCW",
+    "WWW",
+    "ICWSM",
+  ],
+  roles: ["ICWSM '26 — Local Chair"],
+  teaching: [
+    {
+      code: "DSCI-352",
+      title: "Applied Machine Learning and Data Mining",
+      term: "Fall 2025",
+    },
+    {
+      code: "DSCI-550",
+      title: "Data Science at Scale",
+      term: "Spring 2026",
+    },
+    {
+      code: "DSCI-549",
+      title: "Introduction to Computational Thinking and Data Science",
+      term: "Spring 2025",
+    },
+  ] as TeachingItem[],
+};

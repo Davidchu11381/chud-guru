@@ -6,9 +6,11 @@ import { Menu, X } from "lucide-react";
 const links = [
   { href: "#about", label: "About" },
   { href: "#research", label: "Research" },
+  { href: "#skills", label: "Skills" },
   { href: "#news", label: "News" },
   { href: "#publications", label: "Publications" },
   { href: "#contact", label: "Contact" },
+  { href: "#services", label: "Services" },
 ];
 
 export function Nav() {
@@ -39,12 +41,12 @@ export function Nav() {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden sm:flex items-center gap-1 text-base">
+        <ul className="hidden sm:flex items-center gap-0.5 text-[15px]">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="px-3 py-2 rounded text-ink-600 hover:text-ink-900 transition-colors"
+                className="px-2 py-2 rounded text-ink-600 hover:text-ink-900 transition-colors"
               >
                 {l.label}
               </a>
