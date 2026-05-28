@@ -44,22 +44,24 @@ export function About() {
             >
               SIGNALS Lab
             </a>
-            ) and <span className="text-ink-900">Kristina Lerman</span>. I&apos;m
-            an incoming{" "}
-            <span className="text-ink-900">Anthropic AI Safety Fellow</span> and
-            incoming Research Scientist Intern on Character.AI&apos;s Safety &
-            Alignment team.
+            ) and <span className="text-ink-900">Kristina Lerman</span>. This
+            summer I&apos;m an incoming{" "}
+            <span className="text-ink-900">Anthropic AI Safety Fellow</span>,
+            working on research that advances AI alignment and safety.
           </p>
           <p>
-            I grew up in <span className="text-ink-900">Vũng Tàu</span>, a
-            coastal city in southern Việt Nam, and now live in Los Angeles.
-            Outside research I box, play tennis, and read more philosophy of
-            mind than is probably healthy for an empiricist.
+            I grew up in <span className="text-ink-900">Vũng Tàu</span>{" "}
+            <span aria-label="Vietnam flag">🇻🇳</span>, a coastal city in
+            southern Việt Nam, and now live in Los Angeles{" "}
+            <span aria-label="US flag">🇺🇸</span>. Outside research I box, play
+            tennis, and read more philosophy of mind than is probably healthy
+            for an empiricist.
           </p>
 
           <button
             type="button"
             onClick={() => setExpanded((e) => !e)}
+            aria-expanded={expanded}
             className="group inline-flex items-center gap-2 text-base text-ink-600 hover:text-accent transition-colors mt-2"
           >
             <span>{expanded ? "Read less" : "Read more"}</span>
@@ -80,7 +82,7 @@ export function About() {
             <div className="overflow-hidden">
               <div className="space-y-5 text-lg text-ink-700 leading-relaxed max-w-3xl border-l-2 border-black/10 pl-6">
                 <p>
-                  Minh Duc Chu is a Computer Science PhD candidate at the{" "}
+                  I&apos;m a Computer Science PhD candidate at the{" "}
                   <a
                     href={profile.links.isi}
                     target="_blank"
@@ -112,22 +114,22 @@ export function About() {
                   Indiana University).
                 </p>
                 <p>
-                  His research sits at the intersection of{" "}
+                  My research sits at the intersection of{" "}
                   <span className="text-ink-900">
                     AI safety and alignment
                   </span>{" "}
-                  and <span className="text-ink-900">mental health</span>,
-                  focusing on how repeated interactions with conversational AI
-                  can compound into harmful trajectories — emotional
-                  dependency, belief spirals, and eating-disorder reinforcement
-                  — especially for teens and other vulnerable users.
+                  and <span className="text-ink-900">mental health</span>. I
+                  focus on how repeated interactions with conversational AI can
+                  compound into harmful trajectories — emotional dependency,
+                  belief spirals, and eating-disorder reinforcement — especially
+                  for teens and other vulnerable users.
                 </p>
                 <p>
-                  He translates these psychosocial risks into concrete rubrics,
+                  I translate these psychosocial risks into concrete rubrics,
                   red-teaming harnesses, and post-training recipes (SFT, RLHF,
                   preference optimization) in partnership with clinicians and
-                  social scientists. His work bridges computational and
-                  clinical communities, with publications at venues like{" "}
+                  social scientists. My work bridges computational and clinical
+                  communities, with publications at venues like{" "}
                   <em className="font-serif">NAACL</em> and{" "}
                   <em className="font-serif">EMNLP</em> as well as clinical
                   journals such as <em className="font-serif">Body Image</em>{" "}
@@ -138,11 +140,9 @@ export function About() {
                   .
                 </p>
                 <p>
-                  He is an incoming{" "}
+                  I&apos;m an incoming{" "}
                   <span className="text-ink-900">Anthropic Fellow</span> (AI
-                  Safety) and an incoming{" "}
-                  <span className="text-ink-900">Research Scientist Intern</span>{" "}
-                  on the Safety and Alignment team at Character.AI.
+                  Safety).
                 </p>
               </div>
             </div>

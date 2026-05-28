@@ -52,7 +52,9 @@ export function Hero() {
               {profile.fellowship}
             </p>
             <p className="mt-3 text-base text-ink-500 leading-relaxed max-w-xl">
-              From {profile.origin}. Based in {profile.location}.
+              From {profile.origin} <span aria-label="Vietnam flag">🇻🇳</span>.
+              Based in {profile.location}{" "}
+              <span aria-label="US flag">🇺🇸</span>.
             </p>
           </div>
 
@@ -79,7 +81,7 @@ export function Hero() {
         </div>
 
         <a
-          href="#research"
+          href="#about"
           className="absolute bottom-10 left-1/2 -translate-x-1/2 inline-flex flex-col items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-ink-500 hover:text-ink-900 transition-colors group"
         >
           <span>Scroll</span>

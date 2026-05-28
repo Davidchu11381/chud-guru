@@ -7,7 +7,7 @@ export const profile = {
   advisor: "Luca Luceri",
   coAdvisor: "Kristina Lerman",
   fellowship:
-    "Incoming Anthropic AI Safety Fellow (Summer 2026) and incoming Research Scientist Intern on Character.AI's Safety & Alignment team.",
+    "Incoming Anthropic AI Safety Fellow (Summer 2026), focusing on work that advances AI alignment and safety.",
   origin: "Vũng Tàu, Việt Nam",
   location: "Los Angeles, CA",
   email: "mhchu@usc.edu",
@@ -49,34 +49,33 @@ export type NewsItem = {
 export const news: NewsItem[] = [
   {
     date: "May 2026",
-    iso: "2026-05",
-    body: "Presenting our ICWSM '26 paper — a multimodal TikTok dataset of Ecuador's 2024 political crisis and organized crime discourse — at the conference in LA (May 27–29) with Charles Bickham.",
+    iso: "2026-05-27",
+    body: "Presenting our ICWSM '26 paper — a multimodal TikTok dataset of Ecuador's 2024 political crisis and organized crime discourse — at the conference in LA (May 27–29).",
+    href: "https://www.icwsm.org/2026/",
   },
   {
     date: "May 2026",
     iso: "2026-05",
     body: "Joining Anthropic this summer as an AI Safety Fellow, working on socio-technical alignment.",
-  },
-  {
-    date: "Feb 2026",
-    iso: "2026-02",
-    body: "Paper accepted at The Web Conference (WWW '26) on emergent coordinated behaviours in networked LLM agents.",
+    href: "https://www.anthropic.com/fellows-program",
   },
   {
     date: "Jan 2026",
-    iso: "2026-01",
+    iso: "2026-01-15",
     body: "BigTokDetect accepted at EACL '26 — a clinically-informed vision–language framework for detecting pro-bigorexia content on TikTok.",
     href: "https://aclanthology.org/2026.eacl-long.33.pdf",
   },
   {
     date: "Jan 2026",
-    iso: "2026-01-02",
+    iso: "2026-01",
     body: "Article on gendered stereotypes and body-image concerns on diet and fitness forums published in Body Image.",
+    href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mVCqi_kAAAAJ&citation_for_view=mVCqi_kAAAAJ:Tyk-4Ss8FVUC",
   },
   {
-    date: "Apr 2025",
-    iso: "2025-04",
+    date: "May 2025",
+    iso: "2025-05",
     body: "Preprint out — Illusions of Intimacy: How Emotional Dynamics Shape Human–AI Relationships.",
+    href: "https://arxiv.org/abs/2505.11649",
   },
   {
     date: "Feb 2025",
@@ -126,15 +125,6 @@ export const publications: Publication[] = [
   },
   {
     title:
-      "Emergent Coordinated Behaviours in Networked LLM Agents: Modelling the Strategic Dynamics of Information Operations",
-    authors: "Minh Duc Chu et al.",
-    venue: "The Web Conference (WWW) 2026",
-    year: 2026,
-    tag: "WWW '26",
-    featured: true,
-  },
-  {
-    title:
       "Leveraging machine learning to identify gendered stereotypes and body image concerns on diet and fitness online forums",
     authors:
       "Minh Duc Chu, Christina Sánchez, Zihao He, Rebecca Dorn, Stuart B. Murray, Kristina Lerman",
@@ -168,6 +158,7 @@ export const publications: Publication[] = [
     venue: "arXiv preprint",
     year: 2025,
     tag: "Preprint",
+    pdf: "https://arxiv.org/abs/2505.11649",
     featured: true,
   },
   {
