@@ -29,15 +29,7 @@ export function Hero() {
                 USC Information Sciences Institute
               </a>
               , advised by{" "}
-              <a
-                href={profile.links.advisor}
-                target="_blank"
-                rel="noreferrer"
-                className="link-quiet text-ink-900"
-              >
-                Luca Luceri
-              </a>{" "}
-              (
+              <span className="text-ink-900">Luca Luceri</span> (
               <a
                 href={profile.links.signalsLab}
                 target="_blank"

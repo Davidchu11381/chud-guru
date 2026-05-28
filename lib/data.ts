@@ -6,8 +6,7 @@ export const profile = {
   affiliation: "USC Information Sciences Institute",
   advisor: "Luca Luceri",
   coAdvisor: "Kristina Lerman",
-  fellowship:
-    "Incoming Anthropic AI Safety Fellow (Summer 2026), focusing on work that advances AI alignment and safety.",
+  fellowship: "Anthropic AI Safety Fellow (Summer 2026).",
   origin: "Vũng Tàu, Việt Nam",
   location: "Los Angeles, CA",
   email: "mhchu@usc.edu",
