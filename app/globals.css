@@ -17,17 +17,13 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  /* Clear the fixed nav (h-14) when jumping to an anchor */
+  scroll-padding-top: 3.5rem;
 }
 
-main > section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-
-@media (max-width: 640px) {
+@media (prefers-reduced-motion: reduce) {
   html {
-    scroll-snap-type: y proximity;
+    scroll-behavior: auto;
   }
 }
 
