@@ -88,7 +88,7 @@ export function News() {
                       {n.date}
                     </time>
                     <div
-                      className={`text-sm sm:text-lg leading-relaxed transition-colors duration-300 ${
+                      className={`text-base sm:text-lg leading-relaxed transition-colors duration-300 ${
                         isHovered ? "text-ink-900" : "text-ink-700"
                       }`}
                     >

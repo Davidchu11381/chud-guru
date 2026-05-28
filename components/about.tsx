@@ -30,39 +30,36 @@ export function About() {
             >
               SIGNALS Lab
             </a>
-            ) and <span className="text-ink-900">Kristina Lerman</span> (Luddy
-            School of Informatics, Computing and Engineering, Indiana
-            University). This summer I&apos;m an incoming{" "}
-            <span className="text-ink-900">Anthropic AI Safety Fellow</span>,
-            working on research that advances AI alignment and safety.
+            ) and <span className="text-ink-900">Kristina Lerman</span>. This
+            summer I&apos;m an incoming{" "}
+            <span className="text-ink-900">Anthropic AI Safety Fellow</span>.
           </p>
           <p>
-            My research sits at the intersection of{" "}
-            <span className="text-ink-900">AI safety and alignment</span> and{" "}
-            <span className="text-ink-900">mental health</span>. I focus on how
-            repeated interactions with conversational AI can compound into
-            harmful trajectories — emotional dependency, belief spirals, and
+            My research sits where{" "}
+            <span className="text-ink-900">AI safety and alignment</span> meet{" "}
+            <span className="text-ink-900">mental health</span>: how repeated
+            interactions with conversational AI can compound into harmful
+            trajectories — emotional dependency, belief spirals,
             eating-disorder reinforcement — especially for teens and other
-            vulnerable users. I translate these psychosocial risks into
-            concrete rubrics, red-teaming harnesses, and post-training recipes
-            (SFT, RLHF, preference optimization), in partnership with
+            vulnerable users. I turn these risks into concrete rubrics,
+            red-teaming harnesses, and post-training recipes, working with
             clinicians and social scientists.
           </p>
           <p>
-            I&apos;m also very interested in{" "}
+            I&apos;m also drawn to{" "}
             <span className="text-ink-900">model psychology</span> and{" "}
             <span className="text-ink-900">model welfare</span>, and what they
-            complicate about AI safety and alignment — what psychosocial
-            traits, drives, and failure modes models develop, and what we may owe
-            entities trained to feel like someone.
+            complicate for AI safety — what psychosocial traits, drives, and
+            failure modes models develop, and what we may owe entities trained
+            to feel like someone.
           </p>
           <p>
             I grew up in <span className="text-ink-900">Vũng Tàu</span>{" "}
-            <span aria-label="Vietnam flag">🇻🇳</span>, a coastal city in
-            southern Việt Nam, and now live in Los Angeles{" "}
+            <span aria-label="Vietnam flag">🇻🇳</span> on the coast of southern
+            Việt Nam, and now live in Los Angeles{" "}
             <span aria-label="US flag">🇺🇸</span>. Outside research I box, play
-            tennis, and read more philosophy of mind than is probably healthy
-            for an empiricist.
+            tennis, and read more philosophy of mind than is healthy for an
+            empiricist.
           </p>
         </div>
       </div>
