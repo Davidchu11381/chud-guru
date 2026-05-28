@@ -38,6 +38,7 @@ export const profile = {
     signalsLab: "https://signals-lab.vercel.app/",
     advisor: "https://www.luceriluc.it/",
     characterai: "https://character.ai",
+    cv: "https://drive.google.com/file/d/1fpcWaXFbd1pQW48ov_ZBzwu4BHPiTDAD/view?usp=sharing",
   },
 };
 

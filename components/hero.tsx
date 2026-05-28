@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, FileText } from "lucide-react";
 import { profile } from "@/lib/data";
 
 export function Hero() {
@@ -51,6 +51,18 @@ export function Hero() {
               Based in {profile.location}{" "}
               <span aria-label="US flag">🇺🇸</span>.
             </p>
+
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a
+                href={profile.links.cv}
+                target="_blank"
+                rel="noreferrer"
+                className="group inline-flex items-center gap-2 rounded-md border border-ink-900 bg-ink-900 px-4 py-2.5 text-sm font-medium text-paper shadow-[0_8px_24px_-12px_rgba(0,0,0,0.5)] transition-colors hover:bg-accent hover:border-accent"
+              >
+                <FileText className="w-4 h-4" />
+                View CV
+              </a>
+            </div>
           </div>
 
           <div className="order-1 sm:order-2 justify-self-start sm:justify-self-end">
