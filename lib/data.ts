@@ -49,7 +49,7 @@ export const news: NewsItem[] = [
   {
     date: "May 2026",
     iso: "2026-05-27",
-    body: "Presenting our ICWSM '26 paper — a multimodal TikTok dataset of Ecuador's 2024 political crisis and organized crime discourse — at the conference in LA (May 27–29).",
+    body: "Presenting our ICWSM '26 paper — Tied In on TikTok: Tie Strength and Emotional Dynamics in Algorithmic Communities — with Charles Bickham at the conference in LA (May 27–29).",
     href: "https://www.icwsm.org/2026/",
   },
   {
@@ -103,16 +103,6 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     title:
-      "A Multimodal TikTok Dataset of Ecuador's 2024 Political Crisis and Organized Crime Discourse",
-    authors:
-      "Charles Bickham, Bryan Ramirez-Gonzalez, Minh Duc Chu, Kristina Lerman, Emilio Ferrara",
-    venue: "ICWSM 2026",
-    year: 2026,
-    tag: "ICWSM '26",
-    featured: true,
-  },
-  {
-    title:
       "BigTokDetect: A Clinically-Informed Vision–Language Modeling Framework for Detecting Pro-Bigorexia Videos on TikTok",
     authors:
       "Minh Duc Chu, Kshitij Pawar, Zihao He, Roxanna Sharifi, Ross M. Sonnenblick, Magdalayna Curry, Laura D'Adamo, Lindsay Young, Stuart Murray, Kristina Lerman",
@@ -145,9 +135,10 @@ export const publications: Publication[] = [
       "Tied In on TikTok: Tie Strength and Emotional Dynamics in Algorithmic Communities",
     authors:
       "Charles Bickham, Minh Duc Chu, Audrey Yuan, Victoria Lookingbill, Erfan Mohammadi, Stuart Murray, et al.",
-    venue: "arXiv preprint",
+    venue: "ICWSM 2026",
     year: 2026,
-    tag: "Preprint",
+    tag: "ICWSM '26",
+    featured: true,
   },
   {
     title:
