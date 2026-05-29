@@ -21,6 +21,14 @@ html {
   scroll-padding-top: 3.5rem;
 }
 
+/* Desktop (web) reads a touch smaller than the default 16px root.
+   Phone (< sm breakpoint) keeps full size. All rem-based type scales down. */
+@media (min-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
