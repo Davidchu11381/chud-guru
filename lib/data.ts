@@ -147,7 +147,7 @@ export const publications: Publication[] = [
     title:
       "Tied In on TikTok: Tie Strength and Emotional Dynamics in Algorithmic Communities",
     authors:
-      "Charles Bickham, Minh Duc Chu, Audrey Yuan, Victoria Lookingbill, Erfan Mohammadi, Stuart Murray, et al.",
+      "Charles Bickham, Minh Duc Chu, Arianna Yuan, Valerie Lookingbill, Ehsan Mohammadi, Stuart Murray, Kristina Lerman, Emilio Ferrara",
     venue: "ICWSM 2026",
     year: 2026,
     tag: "ICWSM '26",
