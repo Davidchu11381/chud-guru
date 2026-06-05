@@ -41,7 +41,7 @@ export function SocialIcons({ className = "" }: { className?: string }) {
             aria-label={label}
             title={label}
             {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-            className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink-900/15 bg-paper/60 text-ink-700 shadow-[0_8px_24px_-16px_rgba(0,0,0,0.5)] transition-all duration-200 hover:-translate-y-0.5 hover:border-accent hover:text-accent hover:bg-paper"
+            className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink-900 bg-ink-900 text-paper shadow-[0_8px_24px_-14px_rgba(0,0,0,0.6)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-paper hover:text-ink-900 hover:shadow-[0_12px_28px_-14px_rgba(0,0,0,0.45)]"
           >
             <Icon className="h-[18px] w-[18px]" />
             <span className="sr-only">{label}</span>
