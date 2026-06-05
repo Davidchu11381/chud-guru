@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Mail, Linkedin, GraduationCap, FileText } from "lucide-react";
+import { Mail, Linkedin, Github, GraduationCap, FileText } from "lucide-react";
 import { profile } from "@/lib/data";
 
 // The personal Gmail, stored split (no contiguous "@") so harvesters can't
@@ -25,6 +25,7 @@ export function SocialIcons({ className = "" }: { className?: string }) {
   const links: IconLink[] = [
     { label: "Email", href: mailHref, icon: Mail },
     { label: "LinkedIn", href: profile.links.linkedin, icon: Linkedin },
+    { label: "GitHub", href: profile.links.github, icon: Github },
     { label: "Google Scholar", href: profile.links.scholar, icon: GraduationCap },
     { label: "CV", href: profile.links.cv, icon: FileText },
   ];
