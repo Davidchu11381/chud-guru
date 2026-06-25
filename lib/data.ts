@@ -289,12 +289,9 @@ export const llmSkills: SkillGroup[] = [
     items: [
       "Sparse Autoencoders",
       "Activation Steering",
-      "Difference-in-Means Directions",
       "Linear Probing",
       "Logit Lens",
-      "Representational Similarity Analysis",
-      "PCA & UMAP",
-      "Cross-Layer Direction Analysis",
+      "Representation Geometry",
       "Circuit & Attention Analysis",
       "Feature Attribution",
     ],
