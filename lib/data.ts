@@ -338,6 +338,11 @@ export const services = {
     { name: "CSCW", href: "https://cscw.acm.org/" },
     { name: "WWW", href: "https://thewebconf.org/" },
     { name: "ICWSM", href: "https://www.icwsm.org/" },
+    { name: "ACII", href: "https://acii-conf.net/" },
+    {
+      name: "IJHCS (journal)",
+      href: "https://www.sciencedirect.com/journal/international-journal-of-human-computer-studies",
+    },
   ] as LinkedVenue[],
   roles: [
     { label: "ICWSM '26 — Local Chair", href: "https://www.icwsm.org/2026/" },
