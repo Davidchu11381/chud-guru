@@ -61,13 +61,13 @@ export const news: NewsItem[] = [
     date: "May 2026",
     iso: "2026-05-27",
     body: "Presenting our ICWSM '26 paper — Tied In on TikTok: Tie Strength and Emotional Dynamics in Algorithmic Communities — with Charles Bickham at the conference in LA (May 27–29).",
-    href: "https://www.icwsm.org/2026/",
+    href: "https://arxiv.org/abs/2603.22504",
   },
   {
     date: "May 2026",
     iso: "2026-05",
-    body: "Joining Anthropic this summer as an AI Safety Fellow, working on socio-technical alignment.",
-    href: "https://www.anthropic.com/fellows-program",
+    body: "Joining Anthropic this summer as an AI Safety Fellow (Cohort 4), working on socio-technical alignment.",
+    href: "https://alignment.anthropic.com/2025/anthropic-fellows-program-2026/",
   },
   {
     date: "Jan 2026",
