@@ -13,7 +13,7 @@ const themes = [
   {
     n: "02",
     title: "Psychology, Welfare & Interpretability",
-    desc: "The traits, drives, and failure modes models develop, how complex constructs get encoded as (often linear) directions inside them, and how the way we treat models may carry downstream weight.",
+    desc: "Raising a model's EQ: the traits, drives, and failure modes models develop, how complex constructs get encoded as directions inside them, and how the way we treat models may carry downstream weight.",
   },
   {
     n: "03",

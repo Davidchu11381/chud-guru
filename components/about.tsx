@@ -68,13 +68,16 @@ export function About() {
             I&apos;m also drawn to{" "}
             <span className="text-ink-900">model psychology</span>,{" "}
             <span className="text-ink-900">interpretability</span>, and{" "}
-            <span className="text-ink-900">model welfare</span>. I want to
-            understand the stable traits, drives, and failure modes a model
-            develops, and how complex constructs — emotions, values, persona —
-            get encoded as (often linear) directions in its representations.
-            That structure feels central to a lot of AI safety; and so,
-            increasingly, does the way we treat models, which may carry real
-            downstream consequences.
+            <span className="text-ink-900">model welfare</span>. What ties them
+            together is a model&apos;s <span className="text-ink-900">EQ</span> —
+            how well it understands people, aligns with human values, and avoids
+            causing harm. One way to raise it is to help models grasp complex
+            constructs like emotions, values, and persona, studying the traits,
+            drives, and failure modes they develop and how those constructs get
+            encoded as directions in their representations, through
+            interpretability, reasoning, and evaluation. That structure feels
+            central to a lot of AI safety; and so, increasingly, does the way we
+            treat models, which may carry real downstream consequences.
           </p>
           <p>
             I grew up in <span className="text-ink-900">Vũng Tàu</span> on the
