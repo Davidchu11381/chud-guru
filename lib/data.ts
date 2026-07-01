@@ -102,6 +102,7 @@ export const news: NewsItem[] = [
 ];
 
 export type Publication = {
+  key: string; // stable id used by the research-section theme bins
   title: string;
   authors: string;
   venue: string;
@@ -113,6 +114,30 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
+    key: "accommodate",
+    title:
+      "When Chatbots Accommodate: What AI Companions Optimize for in Vulnerable Conversations",
+    authors:
+      "Minh Duc Chu, Yifan Wu, Zhiyi Chen, Angel Hsing-Chi Hwang, Luca Luceri",
+    venue: "arXiv preprint",
+    year: 2026,
+    tag: "Preprint",
+    pdf: "https://arxiv.org/abs/2606.04431",
+    featured: true,
+  },
+  {
+    key: "gymtok",
+    title:
+      "The Body as Status: Muscularity, Engagement, and Body Image Risk on #GymTok",
+    authors:
+      "Magdalayna Curry, Minh Duc Chu, Changhao Yan, Stuart B. Murray, Kristina Lerman, Lindsay E. Young",
+    venue: "arXiv preprint",
+    year: 2026,
+    tag: "Preprint",
+    pdf: "https://arxiv.org/abs/2606.29682",
+  },
+  {
+    key: "bigtok",
     title:
       "BigTokDetect: A Clinically-Informed Vision–Language Modeling Framework for Detecting Pro-Bigorexia Videos on TikTok",
     authors:
@@ -124,6 +149,7 @@ export const publications: Publication[] = [
     featured: true,
   },
   {
+    key: "gendered",
     title:
       "Leveraging machine learning to identify gendered stereotypes and body image concerns on diet and fitness online forums",
     authors:
@@ -134,6 +160,7 @@ export const publications: Publication[] = [
     pdf: "https://arxiv.org/abs/2407.03551",
   },
   {
+    key: "ijed_review",
     title:
       "Detecting Eating Disorders From Social Media Content: What Has Been Done and Where Do We Go Next?",
     authors:
@@ -144,6 +171,7 @@ export const publications: Publication[] = [
     pdf: "https://onlinelibrary.wiley.com/doi/10.1002/eat.24565",
   },
   {
+    key: "tiedin",
     title:
       "Tied In on TikTok: Tie Strength and Emotional Dynamics in Algorithmic Communities",
     authors:
@@ -155,17 +183,19 @@ export const publications: Publication[] = [
     featured: true,
   },
   {
+    key: "illusions",
     title:
       "Illusions of Intimacy: How Emotional Dynamics Shape Human–AI Relationships",
     authors:
       "Minh Duc Chu, Patrick Gerard, Kshitij Pawar, Charles Bickham, Kristina Lerman",
-    venue: "arXiv preprint",
-    year: 2025,
-    tag: "Preprint",
+    venue: "ACII 2026",
+    year: 2026,
+    tag: "ACII '26",
     pdf: "https://arxiv.org/abs/2505.11649",
     featured: true,
   },
   {
+    key: "fidelity",
     title:
       "Improving and Assessing the Fidelity of Large Language Models Alignment to Online Communities",
     authors: "Minh Duc Chu, Zihao He, Rebecca Dorn, Kristina Lerman",
@@ -176,6 +206,7 @@ export const publications: Publication[] = [
     featured: true,
   },
   {
+    key: "safespaces",
     title:
       "Safe spaces or toxic places? Content moderation and social dynamics of online eating disorder communities",
     authors:
@@ -186,6 +217,7 @@ export const publications: Publication[] = [
     pdf: "https://link.springer.com/article/10.1140/epjds/s13688-025-00575-5",
   },
   {
+    key: "edtok",
     title: "EDTok: A Dataset for Eating Disorder Content on TikTok",
     authors:
       "Charles Bickham, Bryan Ramirez-Gonzalez, Minh Duc Chu, Kristina Lerman, Emilio Ferrara",
@@ -195,6 +227,7 @@ export const publications: Publication[] = [
     pdf: "https://workshop-proceedings.icwsm.org/pdf/2025_02.pdf",
   },
   {
+    key: "cci",
     title:
       "Community-Cross-Instruct: Unsupervised Instruction Generation for Aligning Large Language Models to Online Communities",
     authors:
@@ -206,6 +239,7 @@ export const publications: Publication[] = [
     featured: true,
   },
   {
+    key: "llm_reveal",
     title:
       "Large Language Models Help Reveal Unhealthy Diet and Body Concerns in Online Eating Disorders Communities",
     authors: "Minh Duc Chu, Zihao He, Rebecca Dorn, Kristina Lerman",
@@ -215,6 +249,7 @@ export const publications: Publication[] = [
     pdf: "https://arxiv.org/abs/2401.09647",
   },
   {
+    key: "chi_twitter",
     title:
       "Machine Learning Insights Into Eating Disorder Twitter Communities",
     authors:
@@ -225,6 +260,7 @@ export const publications: Publication[] = [
     pdf: "https://dl.acm.org/doi/10.1145/3613905.3651116",
   },
   {
+    key: "intervention",
     title:
       "Towards Safer Online Spaces: Simulating and Assessing Intervention Strategies for Eating Disorder Discussions",
     authors:

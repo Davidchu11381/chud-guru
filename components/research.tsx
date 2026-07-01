@@ -1,44 +1,69 @@
 "use client";
 
 import { useState } from "react";
+import { ExternalLink } from "lucide-react";
 import { SectionHeading } from "./section-heading";
-import { profile } from "@/lib/data";
+import { profile, publications } from "@/lib/data";
 
 const themes = [
   {
     n: "01",
     title: "Assistant → Companion",
     desc: "What changes about safety when people stop using LLMs and start confiding in them.",
+    papers: ["accommodate", "illusions"],
   },
   {
     n: "02",
     title: "Psychology, Welfare & Interpretability",
     desc: "Raising a model's EQ: the traits, drives, and failure modes models develop, how complex constructs get encoded as directions inside them, and how the way we treat models may carry downstream weight.",
+    papers: [] as string[],
   },
   {
     n: "03",
     title: "Character Training",
     desc: "How voice, values, and refusals get baked in at scale.",
+    papers: [] as string[],
   },
   {
     n: "04",
     title: "Aligning to Communities",
     desc: "Tuning LLMs to specific online communities without flattening their language or norms.",
+    papers: ["fidelity", "cci", "llm_reveal"],
   },
   {
     n: "05",
     title: "Computational Social Science",
     desc: "Surfacing harm patterns — body image, eating disorders — across Twitter, Reddit, TikTok.",
+    papers: [
+      "bigtok",
+      "gymtok",
+      "gendered",
+      "ijed_review",
+      "tiedin",
+      "safespaces",
+      "edtok",
+      "intervention",
+      "chi_twitter",
+    ],
   },
   {
     n: "06",
     title: "LLM-Agent Info Ops",
     desc: "Emergent coordinated behaviour in networked LLM agents and its strategic dynamics.",
+    papers: [] as string[],
   },
 ];
 
+function themePubs(keys: string[]) {
+  return keys
+    .map((k) => publications.find((p) => p.key === k))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p))
+    .sort((a, b) => b.year - a.year);
+}
+
 export function Research() {
   const [active, setActive] = useState<string | null>(null);
+  const [open, setOpen] = useState<string | null>(null);
   return (
     <section
       id="research"
@@ -65,34 +90,83 @@ export function Research() {
         </div>
 
         <ol className="mt-12 grid sm:grid-cols-2 gap-x-12 gap-y-8 stagger">
-          {themes.map((t) => (
-            <li
-              key={t.n}
-              onMouseEnter={() => setActive(t.n)}
-              onMouseLeave={() => setActive(null)}
-              className="group cursor-default"
-            >
-              <div className="flex items-baseline gap-4">
-                <span
-                  className={`font-mono text-sm transition-colors ${
-                    active === t.n ? "text-accent" : "text-ink-400"
-                  }`}
-                >
-                  {t.n}
-                </span>
-                <h3 className="font-serif text-2xl text-ink-900 tracking-tight">
-                  {t.title}
-                </h3>
-              </div>
-              <p className="mt-2 ml-9 text-base text-ink-600 leading-relaxed">
-                {t.desc}
-              </p>
-              <div
-                className="ml-9 mt-2.5 h-px bg-ink-900 transition-all duration-500 origin-left"
-                style={{ transform: `scaleX(${active === t.n ? 1 : 0})` }}
-              />
-            </li>
-          ))}
+          {themes.map((t) => {
+            const pubs = themePubs(t.papers);
+            const isOpen = open === t.n;
+            return (
+              <li
+                key={t.n}
+                onMouseEnter={() => setActive(t.n)}
+                onMouseLeave={() => setActive(null)}
+                className="group cursor-default"
+              >
+                <div className="flex items-baseline gap-4">
+                  <span
+                    className={`font-mono text-sm transition-colors ${
+                      active === t.n ? "text-accent" : "text-ink-400"
+                    }`}
+                  >
+                    {t.n}
+                  </span>
+                  <h3 className="font-serif text-2xl text-ink-900 tracking-tight">
+                    {t.title}
+                  </h3>
+                </div>
+                <p className="mt-2 ml-9 text-base text-ink-600 leading-relaxed">
+                  {t.desc}
+                </p>
+                <div
+                  className="ml-9 mt-2.5 h-px bg-ink-900 transition-all duration-500 origin-left"
+                  style={{ transform: `scaleX(${active === t.n ? 1 : 0})` }}
+                />
+                {pubs.length > 0 && (
+                  <div className="ml-9 mt-2.5">
+                    <button
+                      type="button"
+                      onClick={() => setOpen(isOpen ? null : t.n)}
+                      aria-expanded={isOpen}
+                      className="text-sm text-ink-500 hover:text-accent transition-colors inline-flex items-center gap-2"
+                    >
+                      <span
+                        className={`font-mono text-xs transition-transform duration-300 ${
+                          isOpen ? "rotate-90" : ""
+                        }`}
+                      >
+                        →
+                      </span>
+                      {isOpen
+                        ? "Hide papers"
+                        : `See ${pubs.length} paper${pubs.length > 1 ? "s" : ""}`}
+                    </button>
+                    {isOpen && (
+                      <ul className="mt-3 space-y-2.5 border-l border-black/10 pl-4">
+                        {pubs.map((pub) => (
+                          <li key={pub.key} className="text-sm leading-snug">
+                            {pub.pdf ? (
+                              <a
+                                href={pub.pdf}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-ink-800 hover:text-accent transition-colors inline-flex items-baseline gap-1.5"
+                              >
+                                <span>{pub.title}</span>
+                                <ExternalLink className="w-3 h-3 shrink-0 opacity-40 translate-y-0.5" />
+                              </a>
+                            ) : (
+                              <span className="text-ink-800">{pub.title}</span>
+                            )}
+                            <span className="ml-2 font-mono text-xs text-ink-400 whitespace-nowrap">
+                              {pub.tag}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                )}
+              </li>
+            );
+          })}
         </ol>
       </div>
     </section>
