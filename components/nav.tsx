@@ -41,7 +41,7 @@ export function Nav() {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden sm:flex items-center gap-0.5 text-[15px]">
+        <ul className="hidden sm:flex items-center gap-2 text-[15px]">
           {links.map((l) => (
             <li key={l.href}>
               <a
