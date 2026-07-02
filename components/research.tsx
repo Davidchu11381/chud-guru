@@ -10,7 +10,7 @@ type Theme = {
   title: string;
   desc: string;
   papers: string[];
-  now?: { label: string; href: string };
+  now?: { when?: string; label: string; href: string };
 };
 
 const themes: Theme[] = [
@@ -34,7 +34,12 @@ const themes: Theme[] = [
     n: "03",
     title: "Character Training",
     desc: "How voice, values, and refusals get baked in at scale.",
-    papers: [] as string[],
+    papers: [],
+    now: {
+      when: "Fall 2026:",
+      label: "at Character.AI, AI Safety & Alignment team",
+      href: "https://character.ai",
+    },
   },
   {
     n: "04",
@@ -128,7 +133,7 @@ export function Research() {
                 {t.now && (
                   <p className="ml-9 mt-2.5 text-sm text-ink-500">
                     <span className="font-mono text-xs uppercase tracking-wider">
-                      Currently:
+                      {t.now.when ?? "Currently:"}
                     </span>{" "}
                     <a
                       href={t.now.href}
