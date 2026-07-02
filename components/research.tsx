@@ -46,12 +46,6 @@ const themes = [
       "chi_twitter",
     ],
   },
-  {
-    n: "06",
-    title: "LLM-Agent Info Ops",
-    desc: "Emergent coordinated behaviour in networked LLM agents and its strategic dynamics.",
-    papers: [] as string[],
-  },
 ];
 
 function themePubs(keys: string[]) {
