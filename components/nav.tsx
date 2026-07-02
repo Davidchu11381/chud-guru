@@ -46,7 +46,7 @@ export function Nav() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="px-2 py-2 rounded text-ink-600 hover:text-ink-900 transition-colors"
+                className="px-2.5 py-2 rounded-md text-ink-600 hover:text-accent hover:bg-black/[0.05] transition-colors"
               >
                 {l.label}
               </a>
