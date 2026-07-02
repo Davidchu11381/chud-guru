@@ -5,7 +5,15 @@ import { ExternalLink } from "lucide-react";
 import { SectionHeading } from "./section-heading";
 import { profile, publications } from "@/lib/data";
 
-const themes = [
+type Theme = {
+  n: string;
+  title: string;
+  desc: string;
+  papers: string[];
+  now?: { label: string; href: string };
+};
+
+const themes: Theme[] = [
   {
     n: "01",
     title: "Assistant → Companion",
@@ -16,7 +24,11 @@ const themes = [
     n: "02",
     title: "Psychology, Welfare & Interpretability",
     desc: "Raising a model's EQ: the traits, drives, and failure modes models develop, how complex constructs get encoded as directions inside them, and how the way we treat models may carry downstream weight.",
-    papers: [] as string[],
+    papers: [],
+    now: {
+      label: "Part 2 of Anthropic's functional emotion vectors",
+      href: "https://transformer-circuits.pub/2026/emotions/index.html",
+    },
   },
   {
     n: "03",
@@ -113,6 +125,22 @@ export function Research() {
                   className="ml-9 mt-2.5 h-px bg-ink-900 transition-all duration-500 origin-left"
                   style={{ transform: `scaleX(${active === t.n ? 1 : 0})` }}
                 />
+                {t.now && (
+                  <p className="ml-9 mt-2.5 text-sm text-ink-500">
+                    <span className="font-mono text-xs uppercase tracking-wider">
+                      Currently:
+                    </span>{" "}
+                    <a
+                      href={t.now.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-ink-700 hover:text-accent transition-colors inline-flex items-baseline gap-1.5"
+                    >
+                      <span>{t.now.label}</span>
+                      <ExternalLink className="w-3 h-3 shrink-0 opacity-40 translate-y-0.5" />
+                    </a>
+                  </p>
+                )}
                 {pubs.length > 0 && (
                   <div className="ml-9 mt-2.5">
                     <button
